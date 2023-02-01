@@ -2,6 +2,7 @@ import React from "react";
 import styles, { layout } from "../style";
 import { benefits } from "../../constants/about";
 import { ShieldIcon } from "../../assets";
+import Image from "next/image";
 
 const Benefits = () => {
   return (
@@ -32,7 +33,9 @@ const Benefits = () => {
         ))}
       </div>
       <div className={layout.sectionImg}>
-        <img
+        <Image
+          width={400}
+          height={490}
           src={`/handshake.jpg`}
           alt="agree"
           className="w-[100%] max-h-[490px]"

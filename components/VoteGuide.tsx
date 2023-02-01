@@ -3,6 +3,7 @@ import styles, { layout } from "./style";
 import { benefits } from "../constants/about";
 import { eligibility } from "../constants/categories";
 import { ShieldIcon } from "../assets";
+import Image from "next/image";
 
 const VoteGuide = () => {
   const { organization, individual } = eligibility;
@@ -46,7 +47,13 @@ const VoteGuide = () => {
         </div>
       </div>
       <div className={layout.sectionImg}>
-        <img src={`/mail.jpg`} alt="agree" className="w-[100%] max-h-[490px]" />
+        <Image
+          width={400}
+          height={490}
+          src={`/mail.jpg`}
+          alt="agree"
+          className="w-[100%] max-h-[490px]"
+        />
       </div>
     </section>
   );

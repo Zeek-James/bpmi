@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { ShieldIcon } from "../../assets";
 import { focus } from "../../constants/judging";
@@ -11,7 +12,13 @@ const RatingFocus = () => {
       className={`${layout.sectionReverse} ${styles.paddingX} xl:py-24 `}
     >
       <div className={`${layout.sectionImgReverse} relative`}>
-        <img src={`/class.jpg`} className="w-[100%] max-h-[490px]" />
+        <Image
+          width={400}
+          height={490}
+          alt=""
+          src={`/class.jpg`}
+          className="w-[100%] max-h-[490px]"
+        />
       </div>
       <div className={layout.sectionInfo}>
         <h2

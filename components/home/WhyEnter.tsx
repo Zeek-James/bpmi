@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { entryInfo } from "../../constants/landingPage";
 import styles from "../style";
@@ -13,9 +14,11 @@ const WhyEnter = () => {
       <div className="text-white grid  lg:grid-cols-3 sm:grid-cols-2 gap-4 bg-[#C3C4DE]">
         {entryInfo.map((e) =>
           e?.pic ? (
-            <img
+            <Image
               src={`/${e?.pic}.jpg`}
               alt=""
+              height={300}
+              width={300}
               className="px-auto h-[300px] w-[300px] "
               key={e?.pic}
             />

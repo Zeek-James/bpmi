@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { awards } from "../../constants/categories";
 import styles from "../style";
@@ -12,7 +13,9 @@ const Awards = () => {
       </h2>
       <div className=" w-full grid xl:grid-cols-4 gap-4 sm:grid-cols-2 mb-12">
         {awards.map((item) => (
-          <img
+          <Image
+            width={400}
+            height={490}
             src={`/${item}.jpg`}
             alt="category"
             key={item}

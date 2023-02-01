@@ -2,6 +2,7 @@ import React from "react";
 import styles, { layout } from "../style";
 import { basis } from "../../constants/judging";
 import { ShieldIcon } from "../../assets";
+import Image from "next/image";
 
 const RatingMeth = () => {
   const { title, methodologies } = basis;
@@ -32,7 +33,13 @@ const RatingMeth = () => {
         ))}
       </div>
       <div className={layout.sectionImg}>
-        <img src={`/work.jpg`} alt="agree" className="w-[100%] max-h-[490px]" />
+        <Image
+          width={400}
+          height={490}
+          src={`/work.jpg`}
+          alt="agree"
+          className="w-[100%] max-h-[490px]"
+        />
       </div>
     </section>
   );

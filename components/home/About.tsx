@@ -1,6 +1,7 @@
 import React from "react";
 import styles, { layout } from "../style";
 import Button from "../Button";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -22,10 +23,12 @@ const About = () => {
         />
       </div>
       <div className={layout.sectionImg}>
-        <img
+        <Image
           src={`/glass-award.jpg`}
           alt="billing"
           className="w-[100%] max-h-[490px]"
+          width={400}
+          height={490}
         />
       </div>{" "}
     </section>

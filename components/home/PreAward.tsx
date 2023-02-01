@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { preAward } from "../../constants/landingPage";
 import styles, { layout } from "../style";
@@ -10,7 +11,13 @@ const PreAward = () => {
       </h2>
       <div className={`${layout.section} `}>
         <div className={`${layout.sectionImgReverse} relative`}>
-          <img src={`/award.jpg`} className="w-[100%] " />
+          <Image
+            alt=""
+            width={400}
+            height={400}
+            src={`/award.jpg`}
+            className="w-[100%] "
+          />
         </div>
         <div className={layout.sectionInfo}>
           <h2 className={`${styles.heading3} text-primary  my-8`}>

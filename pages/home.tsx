@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { Button, Hero } from "../components";
 import {
   About,
@@ -28,7 +29,13 @@ export default function Home() {
       text-white  flex flex-col items-center justify-end  z-20 px-4"
           >
             <div className="flex flex-col-reverse  sm:flex-row items-center  mb-2">
-              <img src={`/logo.jpg`} className="w-[150px]  mr-1" />
+              <Image
+                alt=""
+                src={`/logo.jpg`}
+                className="w-[150px]  mr-1"
+                width={150}
+                height={150}
+              />
               <h1 className="lg:text-5xl text-3xl mb-2 leading-[40px] sm:leading-[60px] text-center sm:text-start">
                 Business Process Management <br /> Excellence Awards
               </h1>

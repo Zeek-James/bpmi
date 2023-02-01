@@ -1,5 +1,4 @@
 import React from "react";
-import { entryInfo } from "../../constants/landingPage";
 import Button from "../Button";
 import styles from "../style";
 

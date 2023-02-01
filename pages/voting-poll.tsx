@@ -43,8 +43,8 @@ export default function VotingPoll() {
                 Choose award category:
               </h3>
               <div className=" w-full grid  gap-2  list">
-                {awardCategories.map(({ text }) => (
-                  <Radio name={text} id={text} context={text} />
+                {awardCategories.map(({ text }, i) => (
+                  <Radio name={text} id={text} context={text} key={i} />
                 ))}
               </div>
             </div>
@@ -55,8 +55,8 @@ export default function VotingPoll() {
                 Choose Nominee’s industry sector:
               </h3>
               <div className=" w-full grid  gap-2  list">
-                {industries.map(({ text, name }) => (
-                  <Radio name={name} id={text} context={text} />
+                {industries.map(({ text, name }, i) => (
+                  <Radio name={name} id={text} context={text} key={i} />
                 ))}
               </div>
             </div>
@@ -67,8 +67,8 @@ export default function VotingPoll() {
                 Choose Nominee:
               </h3>
               <div className=" w-full grid  gap-2  list">
-                {nominees.map(({ text }) => (
-                  <Radio name={text} id={text} context={text} />
+                {nominees.map(({ text }, i) => (
+                  <Radio name={text} id={text} context={text} key={i} />
                 ))}
               </div>
             </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import OctIcon from "../../assets/OctIcon";
 import { objectives } from "../../constants/about";
@@ -9,7 +10,13 @@ const AimsAndObj = () => {
       className={`${layout.sectionReverse} ${styles.paddingX} xl:py-24 `}
     >
       <div className={`${layout.sectionImgReverse} relative`}>
-        <img src={`/class.jpg`} className="w-[100%] max-h-[490px]" />
+        <Image
+          alt=""
+          width={400}
+          height={490}
+          src={`/class.jpg`}
+          className="w-[100%] max-h-[490px]"
+        />
       </div>
       <div className={layout.sectionInfo}>
         <h2 className={`${styles.heading2} text-primary leading-[50px] `}>
