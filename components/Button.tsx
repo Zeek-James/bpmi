@@ -1,0 +1,18 @@
+import React, { ReactNode } from "react";
+
+type ButtonProp = {
+  text: ReactNode;
+  onClick?: () => void;
+  styles: string;
+};
+
+const Button = ({ styles, text }: ButtonProp): JSX.Element => (
+  <button
+    type="button"
+    className={`p-2 font-poppins transition ease-in-out  hover:scale-105  duration-300   hover:opacity-80  rounded-md outline-none ${styles}`}
+  >
+    {text}
+  </button>
+);
+
+export default Button;
