@@ -44,7 +44,7 @@ const AwardCategories = () => {
         </h3>
         <div className=" w-full grid xl:grid-cols-2 gap-2 sm:grid-cols-2 list">
           {industries.map(({ name, text }) => (
-            <Radio name={name} id={name} context={text} />
+            <Radio name={name} id={name} context={text} key={name} />
           ))}
         </div>
       </div>
