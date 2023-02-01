@@ -1,6 +1,6 @@
 export const navLinks = [
   {
-    id: "home",
+    id: "/",
     title: "Home",
   },
   {
@@ -25,7 +25,7 @@ export const footer = {
   logo: "logo",
   links: [
     {
-      id: "home",
+      id: "/",
       title: "Home",
     },
     {
