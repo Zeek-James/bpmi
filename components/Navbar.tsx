@@ -5,6 +5,7 @@ import { navLinks } from "../constants";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Button } from "./";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,7 +18,10 @@ const Navbar = () => {
     <div className="min-h-fit flex z-30 fixed flex-col  w-full">
       <nav className="w-full flex  z-40 top-0 left-0 px-6 py-2 justify-between items-center navbar text-white">
         <a href="home">
-          <img
+          <Image
+            alt=""
+            width={100}
+            height={100}
             src={`/logo.jpg`}
             className=" w-[50px]  sm:w-[100px]  lg:mr-40 mr-5"
           />

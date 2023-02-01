@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { footer } from "../constants";
 
@@ -10,7 +11,10 @@ const Footer = () => {
       }
     >
       <a href="home">
-        <img
+        <Image
+          alt=""
+          width={100}
+          height={100}
           src={`/${logo}.jpg`}
           className="max-w-[100px] sm:ml-10 mr-2 hidden sm:flex"
         />
