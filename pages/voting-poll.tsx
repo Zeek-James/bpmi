@@ -1,12 +1,12 @@
 import Head from "next/head";
-import { Button, Herofn, VoteGuide } from "../components";
+import { Button, Herofn, Layout, VoteGuide } from "../components";
 import { Radio } from "../components/become-a-nominee";
 import styles from "../components/style";
 import { Questionnaire } from "../components/votePoll";
 import { industries } from "../constants";
 import { awardCategories, nominees } from "../constants/vote";
 
-export default function VotingPoll() {
+const VotingPoll = () => {
   return (
     <>
       <Head>
@@ -132,4 +132,8 @@ min-h-[200px]
       </main>
     </>
   );
-}
+};
+
+VotingPoll.layout = Layout;
+
+export default VotingPoll;

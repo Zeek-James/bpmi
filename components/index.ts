@@ -8,6 +8,7 @@ import { Herofn } from "./Hero";
 import Eligibility from "./Eligibility";
 import PastWinner from "./PastWinner";
 import VoteGuide from "./VoteGuide";
+import AltLayout from "./AltLayout";
 
 export {
   Button,
@@ -16,6 +17,7 @@ export {
   Hero,
   Herofn,
   Layout,
+  AltLayout,
   Navbar,
   Nominee,
   PastWinner,

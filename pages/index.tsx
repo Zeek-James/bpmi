@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Button, Hero } from "../components";
+import { Button, Hero, Layout } from "../components";
 import {
   About,
   CountDown,
@@ -11,7 +11,7 @@ import {
   WinnersJourney,
 } from "../components/home";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -59,4 +59,8 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+
+Home.layout = Layout;
+
+export default Home;

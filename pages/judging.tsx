@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { Hero } from "../components";
+import { Hero, Layout } from "../components";
 import { Criteria, RatingFocus, RatingMeth } from "../components/judging";
 
-export default function Judging() {
+const Judging = () => {
   return (
     <>
       <Head>
@@ -31,4 +31,8 @@ export default function Judging() {
       </main>
     </>
   );
-}
+};
+
+Judging.layout = Layout;
+
+export default Judging;
