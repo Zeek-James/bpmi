@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Button, Hero, Layout } from "../components";
 import {
   About,
@@ -43,10 +44,12 @@ const Home = () => {
             <h3 className="lg:text-4xl text-2xl leading-[30px] sm:leading-[40px] text-center p-2 mb-4">
               Recognizing and Celebrating Innovative <br /> Business Process
             </h3>
-            <Button
-              text={"Enter for Nomination Now"}
-              styles={"bg-[#3E4095] sm:mb-12  mb-6 text-md px-2"}
-            />
+            <Link href="nominee" passHref={true}>
+              <Button
+                text={"Enter for Nomination Now"}
+                styles={"bg-[#3E4095] sm:mb-12  mb-6 text-md px-2"}
+              />{" "}
+            </Link>
           </div>
         </Hero>
         <CountDown />

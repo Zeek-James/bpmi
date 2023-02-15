@@ -6,6 +6,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Button } from "./";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
   return (
     <div className="min-h-fit flex z-30 fixed flex-col  w-full">
       <nav className="w-full flex  z-40 top-0 left-0 px-6 py-2 justify-between items-center navbar text-white">
-        <a href="home">
+        <a href="/">
           <Image
             alt=""
             width={100}
@@ -26,7 +27,6 @@ const Navbar = () => {
             className=" w-[50px]  sm:w-[100px]  lg:mr-40 mr-5"
           />
         </a>
-
         <ul className="list-none md:flex hidden  items-center flex-1">
           {navLinks.map((nav, index) => (
             <li
@@ -45,8 +45,15 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <Button text={"Vote"} styles={"mr-5 border px-2 md:flex hidden"} />
-        <Button text={"Jurist Login"} styles={"bg-[#3E4095] md:flex hidden"} />
+        <Link href="voting-poll" passHref={true}>
+          <Button text={"Vote"} styles={"mr-5 border px-2 md:flex hidden"} />
+        </Link>
+        <Link href="login" passHref={true}>
+          <Button
+            text={"Jurist Login"}
+            styles={"bg-[#3E4095] md:flex hidden"}
+          />
+        </Link>{" "}
         <div className="md:hidden flex flex-1 justify-end items-center">
           {toggle ? (
             <AiOutlineClose
@@ -86,13 +93,17 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="flex md:hidden">
-              <Button text={"Vote"} styles={"mr-5 border px-2  "} />
-              <Button text={"Jurist Login"} styles={"bg-[#3E4095] "} />
+              <Link href="voting-poll" passHref={true}>
+                <Button text={"Vote"} styles={"mr-5 border px-2  "} />
+              </Link>
+              <Link href="login" passHref={true}>
+                <Button text={"Jurist Login"} styles={"bg-[#3E4095] "} />
+              </Link>
             </div>
           </div>
         </div>
       </nav>
-      <div className="bg-black opacity-70 w-full h-full absolute">John</div>
+      <div className="bg-black opacity-70 w-full h-full absolute" />
     </div>
   );
 };

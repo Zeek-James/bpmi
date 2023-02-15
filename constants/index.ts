@@ -107,3 +107,17 @@ export const industries = [
     name: "travel-and-tour",
   },
 ];
+
+// Banks
+export const banks = [
+  { title: "Access Bank Plc", vote: 15, rating: 15 },
+  { title: "Ecobank Nigeria", vote: 15, rating: 15 },
+  { title: "Fidelity Bank Plc", vote: 15, rating: 15 },
+  { title: "First Bank of Nigeria Limited", vote: 15, rating: 15 },
+  { title: "First City Monument Bank Limited", vote: 15, rating: 15 },
+  { title: "Guaranty Trust Holding Company Plc", vote: 15, rating: 15 },
+  { title: "Keystone Bank Limited", vote: 15, rating: 15 },
+  { title: "Kuda microfinance bank", vote: 15, rating: 15 },
+  { title: "Opay", vote: 15, rating: 15 },
+  { title: "Stanbic IBTC Bank Plc", vote: 15, rating: 15 },
+];

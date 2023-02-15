@@ -36,7 +36,7 @@ const VotingPoll = () => {
             Voting Poll
           </h2>
           <form className="w-full  flex flex-col ">
-            <div>
+            {/* <div>
               <h3
                 className={"text-darkText mb-3 md:mb-6 text-2xl font-semibold"}
               >
@@ -125,8 +125,8 @@ min-h-[200px]
                   ("");
                 }}
               />
-            </div>
-            {/* <Questionnaire /> */}
+            </div> */}
+            <Questionnaire />
           </form>
         </section>
       </main>

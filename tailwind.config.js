@@ -14,6 +14,7 @@ module.exports = {
         secondary: "#323377",
         darkText: "#3A3A3A",
         dim: "#C3C4DE",
+        card: "#ECECF4",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
