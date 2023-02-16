@@ -28,7 +28,7 @@ const Questionnaire = () => {
         </thead>
         <tbody>
           {questions.map((q) => (
-            <tr>
+            <tr key={q}>
               <td className={`${padding}`}>
                 <p className="text-[28px]">{q}</p>
               </td>

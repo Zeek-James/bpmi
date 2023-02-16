@@ -7,16 +7,16 @@ const BestUserExperince = () => {
     <div className="mb-10 ">
       <table className="table-auto border-separate   w-full">
         <tbody>
-          {banks.map((banK) => (
-            <tr className=" ">
+          {banks.map((bank, idx) => (
+            <tr className=" " key={idx}>
               <td className={`${border} pr-0  md:pr-8`}>
-                <p className="text-[24px]">{banK.title}</p>
+                <p className="text-[24px]">{bank.title}</p>
               </td>
               <td className={`${border}`}>
-                <p className="text-[24px]">{banK.vote} votes</p>
+                <p className="text-[24px]">{bank.vote} votes</p>
               </td>
               <td className={`${border}`}>
-                <p className="text-[24px] ">{banK.rating} Ratings</p>
+                <p className="text-[24px] ">{bank.rating} Ratings</p>
               </td>
               <td className={`${border}  md:pr-0 pr-0`}>
                 <Button
