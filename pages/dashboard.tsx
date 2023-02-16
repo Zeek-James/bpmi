@@ -12,7 +12,7 @@ const Dashboard = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`text-darkText w-full p-6`}>
+      <main className={`text-darkText w-full py-6`}>
         <div className="text-white  flex justify-between   ">
           {topCards.map((card) => (
             <div

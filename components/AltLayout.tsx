@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Navbar, Sidebar } from "./";
+import { Footer, SearchFieldfn, Sidebar } from "./";
 
 interface LayoutProp {
   children: React.ReactNode;
@@ -7,17 +7,16 @@ interface LayoutProp {
 
 const AltLayout = ({ children }: LayoutProp) => {
   return (
-    <div>
-      <div className="flex">
+    <div className="">
+      <div className="flex bg-card ">
         <Sidebar />
-        <div className="">
-          <div className="flex ">
+        <div className="w-full bg-white p-4 md:p-8">
+          <div className="flex w-full">
             <h2 className="grow text-primary font-bold text-[32px]">
               Council of Jurist Dashboard
             </h2>
-            search
+            <SearchFieldfn />
           </div>
-
           {children}
         </div>
       </div>

@@ -27,7 +27,7 @@ const MenuItem = ({ menuItem }: MenuItemProps) => {
       <div className="flex  items-center h-fit mt-6 md:mt-10">
         <Link href={url} passHref>
           <div className="flex items-center  h-full">
-            <Icon />
+            {/* <Icon /> */}
             <p className="pl-3 font-semibold text-[20px] leading-[32px] pr-4">
               {name}
             </p>

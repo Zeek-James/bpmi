@@ -4,27 +4,27 @@ import Button from "../Button";
 
 const BestUserExperince = () => {
   return (
-    <div>
-      <table className="table-auto border-separate  ">
+    <div className="mb-10 ">
+      <table className="table-auto border-separate   w-full">
         <tbody>
           {banks.map((banK) => (
             <tr className=" ">
-              <td className={`${border} md:pl-0  md:pr-8`}>
+              <td className={`${border} pr-0  md:pr-8`}>
                 <p className="text-[24px]">{banK.title}</p>
               </td>
               <td className={`${border}`}>
                 <p className="text-[24px]">{banK.vote} votes</p>
               </td>
               <td className={`${border}`}>
-                <p className="text-[24px]">{banK.rating} Ratings</p>
+                <p className="text-[24px] ">{banK.rating} Ratings</p>
               </td>
-              <td className={`${border}`}>
+              <td className={`${border}  md:pr-0 pr-0`}>
                 <Button
                   text={"View Votes"}
                   styles={"text-[20px] bg-primary text-white"}
                 />
               </td>
-              <td className={`${border}`}>
+              <td className={`${border} justify-end flex md:pr-0 pr-0`}>
                 <Button
                   text={"View Ratings"}
                   styles={"text-[20px] border border-primary text-primary"}

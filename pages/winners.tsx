@@ -10,7 +10,7 @@ const Winners = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={``}>
+      <main className={`text-darkText`}>
         <Hero img={"stairs"}>
           <div
             className="
@@ -24,7 +24,6 @@ const Winners = () => {
           </div>
         </Hero>
         <PastWinner />
-        journey our approach why enter our winner pre-award
       </main>
     </>
   );

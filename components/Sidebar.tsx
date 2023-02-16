@@ -5,7 +5,7 @@ import MenuList from "./MenuList";
 
 const Sidebar = () => {
   return (
-    <div className="w-1/5 flex flex-col h-fit min-h-screen bg-card">
+    <div className="w-1/5 flex flex-col h-fit min-h-screen ">
       <div className="h-[250px] w-full  flex flex-col items-center justify-center border-b-2 border-dim">
         <Image
           alt=""

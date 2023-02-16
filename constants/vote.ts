@@ -81,3 +81,14 @@ export const nominees = [
     text: "Zenith Bank Plc",
   },
 ];
+
+export const questions = [
+  "How satisfied were you with the customer service experience htmlFor this company?",
+  "How satisfied were you with the company’s service delivery?",
+  "How strongly do you agree with the following statement: the company’s process is simple and painless.",
+  "How easy is the transaction process with the company?",
+  "How satisfied are you with the services of the company?",
+  "How likely would you be to recommend to a friend or a colleague?",
+  "To what extent does the company services meet your need?",
+  "How satisfied were you with using the website of this company?",
+];
