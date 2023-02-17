@@ -15,28 +15,29 @@ const VotingPoll = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`text-darkText`}>
-        <Herofn>
-          <div
-            className="
+      <Layout>
+        <main className={`text-darkText`}>
+          <Herofn>
+            <div
+              className="
         pt-20
       min-h-[490px] lg:h-[520px]
       text-white  flex  items-center justify-end  z-20 px-4"
+            >
+              <h1 className="lg:text-5xl text-3xl mb-2 leading-[40px] sm:leading-[60px] text-center sm:text-start">
+                Voting Poll
+              </h1>
+            </div>
+          </Herofn>
+          <VoteGuide />
+          <section
+            className={`${styles.flexCenter} ${styles.paddingX}  flex-col my-20 border-t-2 pt-6 `}
           >
-            <h1 className="lg:text-5xl text-3xl mb-2 leading-[40px] sm:leading-[60px] text-center sm:text-start">
+            <h2 className={`${styles.heading2} text-primary text-center`}>
               Voting Poll
-            </h1>
-          </div>
-        </Herofn>
-        <VoteGuide />
-        <section
-          className={`${styles.flexCenter} ${styles.paddingX}  flex-col my-20 border-t-2 pt-6 `}
-        >
-          <h2 className={`${styles.heading2} text-primary text-center`}>
-            Voting Poll
-          </h2>
-          <form className="w-full  flex flex-col ">
-            {/* <div>
+            </h2>
+            <form className="w-full  flex flex-col ">
+              {/* <div>
               <h3
                 className={"text-darkText mb-3 md:mb-6 text-2xl font-semibold"}
               >
@@ -126,14 +127,13 @@ min-h-[200px]
                 }}
               />
             </div> */}
-            <Questionnaire />
-          </form>
-        </section>
-      </main>
+              <Questionnaire />
+            </form>
+          </section>
+        </main>
+      </Layout>
     </>
   );
 };
-
-VotingPoll.layout = Layout;
 
 export default VotingPoll;

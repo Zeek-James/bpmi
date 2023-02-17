@@ -26,7 +26,7 @@ const Footer = () => {
             width={100}
             height={100}
             src={`/${logo}.jpg`}
-            className="max-w-[100px] sm:ml-10 mr-2 hidden sm:flex"
+            className="max-w-[100px] sm:ml-10 mr-2 sm:hidden flex"
           />
           <div className=" justify-center w-full   flex flex-wrap  ">
             {links.map((f) => (
