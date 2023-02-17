@@ -16,73 +16,73 @@ const BecomeANominee = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`text-darkText`}>
-        <Herofn>
-          <div
-            className="
+      <Layout>
+        <main className={`text-darkText`}>
+          <Herofn>
+            <div
+              className="
         pt-20
       min-h-[490px] lg:h-[520px]
       text-white  flex  items-center justify-end  z-20 px-4"
-          >
-            <h1 className="lg:text-5xl text-3xl mb-2 leading-[40px] sm:leading-[60px] text-center sm:text-start">
-              Become a Nominee
-            </h1>
-          </div>
-        </Herofn>
-        <Eligibility />
-        <section
-          className={`${styles.flexCenter}  flex-col my-20 border-t-2 pt-6 `}
-        >
-          <h2 className={`${styles.heading2} text-primary text-center`}>
-            Nominees Registration
-          </h2>
-          <form className="w-full  flex flex-col items-center">
-            <CompanyDetails />
-            <div className="border  w-full mb-3" />
-            <PointOfContact />
-            <div className="border  w-full mb-3" />
-            <AwardCategories />
-            <div className="border  w-full mb-3" />
-            <div
-              className={`flex flex-col  justify-center w-full  max-w-5xl ${styles.paddingX}`}
             >
-              <h2
-                className={"text-center  font-semibold text-3xl py-3 sm:pt-6"}
+              <h1 className="lg:text-5xl text-3xl mb-2 leading-[40px] sm:leading-[60px] text-center sm:text-start">
+                Become a Nominee
+              </h1>
+            </div>
+          </Herofn>
+          <Eligibility />
+          <section
+            className={`${styles.flexCenter}  flex-col my-20 border-t-2 pt-6 `}
+          >
+            <h2 className={`${styles.heading2} text-primary text-center`}>
+              Nominees Registration
+            </h2>
+            <form className="w-full  flex flex-col items-center">
+              <CompanyDetails />
+              <div className="border  w-full mb-3" />
+              <PointOfContact />
+              <div className="border  w-full mb-3" />
+              <AwardCategories />
+              <div className="border  w-full mb-3" />
+              <div
+                className={`flex flex-col  justify-center w-full  max-w-5xl ${styles.paddingX}`}
               >
-                Click Submit and you are done
-              </h2>
-              <p className={`text-center mb-3 sm:mb-6 ${styles.paragraph}`}>
-                Once you have clicked the SUBMIT button, your entry will
-                automatically be sent to the organizers and you will receive a
-                Nomination Confirmation on your email.
-              </p>
-              <div className="flex w-full items-center justify-center gap-2 md:gap-6 mb-3 md:mb-10">
-                <Button
-                  styles="border border-primary text-primary font-semibold 
+                <h2
+                  className={"text-center  font-semibold text-3xl py-3 sm:pt-6"}
+                >
+                  Click Submit and you are done
+                </h2>
+                <p className={`text-center mb-3 sm:mb-6 ${styles.paragraph}`}>
+                  Once you have clicked the SUBMIT button, your entry will
+                  automatically be sent to the organizers and you will receive a
+                  Nomination Confirmation on your email.
+                </p>
+                <div className="flex w-full items-center justify-center gap-2 md:gap-6 mb-3 md:mb-10">
+                  <Button
+                    styles="border border-primary text-primary font-semibold 
                   text-xl 
                   px-20"
-                  text="Save"
-                  onClick={() => {
-                    ("");
-                  }}
-                />
-                <Button
-                  styles="bg-primary text-white font-semibold 
+                    text="Save"
+                    onClick={() => {
+                      ("");
+                    }}
+                  />
+                  <Button
+                    styles="bg-primary text-white font-semibold 
                   text-xl px-20"
-                  text="Submit"
-                  onClick={() => {
-                    ("");
-                  }}
-                />
+                    text="Submit"
+                    onClick={() => {
+                      ("");
+                    }}
+                  />
+                </div>
               </div>
-            </div>
-          </form>
-        </section>
-      </main>
+            </form>
+          </section>
+        </main>
+      </Layout>
     </>
   );
 };
-
-BecomeANominee.layout = Layout;
 
 export default BecomeANominee;

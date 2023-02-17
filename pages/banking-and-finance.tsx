@@ -11,17 +11,19 @@ const BankAndFin = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`text-darkText w-full py-6`}>
-        <h3 className="font-semibold text-[28px] mb-10">Banking and Finance</h3>
-        <h4 className="font-semibold text-[24px] mb-5">
-          Best User Experience Based Process of the year Award
-        </h4>
-        <BestUserExperince />
-      </main>
+      <AltLayout>
+        <main className={`text-darkText w-full py-6`}>
+          <h3 className="font-semibold text-[28px] mb-10">
+            Banking and Finance
+          </h3>
+          <h4 className="font-semibold text-[24px] mb-5">
+            Best User Experience Based Process of the year Award
+          </h4>
+          <BestUserExperince />
+        </main>
+      </AltLayout>
     </>
   );
 };
-
-BankAndFin.layout = AltLayout;
 
 export default BankAndFin;

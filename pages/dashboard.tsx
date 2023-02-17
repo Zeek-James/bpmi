@@ -12,36 +12,38 @@ const Dashboard = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`text-darkText w-full py-6`}>
-        <div className="text-white  flex justify-between   ">
-          {topCards.map((card) => (
-            <div
-              className="  h-[200px] md:max-w-[400px]  p-6 flex flex-col rounded-3xl shadow-xl"
-              key={card.id}
-            >
-              <h3 className={` text-darkText  text-[20px] md:text-[28px] grow`}>
-                {card.content}
-              </h3>
-              <h3
-                className={` text-primary font-semibold  text-[28px] md:text-[35px] `}
+      <AltLayout>
+        <main className={`text-darkText w-full py-6`}>
+          <div className="text-white  flex justify-between   ">
+            {topCards.map((card) => (
+              <div
+                className="  h-[200px] md:max-w-[400px]  p-6 flex flex-col rounded-3xl shadow-xl"
+                key={card.id}
               >
-                {card.amount}
-                {"  "}
-                <span>{card.title}</span>
-              </h3>
-            </div>
-          ))}
-        </div>
-        <div className="flex justify-between">
-          <MessageCard />
-          <MessageCard />
-          <MessageCard />
-        </div>
-      </main>
+                <h3
+                  className={` text-darkText  text-[20px] md:text-[28px] grow`}
+                >
+                  {card.content}
+                </h3>
+                <h3
+                  className={` text-primary font-semibold  text-[28px] md:text-[35px] `}
+                >
+                  {card.amount}
+                  {"  "}
+                  <span>{card.title}</span>
+                </h3>
+              </div>
+            ))}
+          </div>
+          <div className="flex justify-between">
+            <MessageCard />
+            <MessageCard />
+            <MessageCard />
+          </div>
+        </main>
+      </AltLayout>
     </>
   );
 };
-
-Dashboard.layout = AltLayout;
 
 export default Dashboard;
