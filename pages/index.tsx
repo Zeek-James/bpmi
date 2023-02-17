@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Button, Hero } from "../components";
+import Link from "next/link";
+import { Button, Hero, Layout } from "../components";
 import {
   About,
   CountDown,
@@ -11,8 +12,7 @@ import {
   WinnersJourney,
 } from "../components/home";
 
-export default function Home() {
-  return (
+export default function Home() {  return (
     <>
       <Head>
         <title>BPMI</title>
@@ -43,10 +43,12 @@ export default function Home() {
             <h3 className="lg:text-4xl text-2xl leading-[30px] sm:leading-[40px] text-center p-2 mb-4">
               Recognizing and Celebrating Innovative <br /> Business Process
             </h3>
-            <Button
-              text={"Enter for Nomination Now"}
-              styles={"bg-[#3E4095] sm:mb-12  mb-6 text-md px-2"}
-            />
+            <Link href="nominee" passHref={true}>
+              <Button
+                text={"Enter for Nomination Now"}
+                styles={"bg-[#3E4095] sm:mb-12  mb-6 text-md px-2"}
+              />{" "}
+            </Link>
           </div>
         </Hero>
         <CountDown />
@@ -59,4 +61,5 @@ export default function Home() {
       </main>
     </>
   );
-}
+};
+

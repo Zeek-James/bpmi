@@ -21,9 +21,12 @@ const Footer = () => {
       </a>
       <div className="sm:flex w-full items-center">
         <div className=" flex grow  items-center mb-4 sm:mb-0">
-          <img
+          <Image
+            alt=""
+            width={100}
+            height={100}
             src={`/${logo}.jpg`}
-            className="max-w-[100px] object-contain sm:ml-10 mr-2 sm:hidden"
+            className="max-w-[100px] sm:ml-10 mr-2 hidden sm:flex"
           />
           <div className=" justify-center w-full   flex flex-wrap  ">
             {links.map((f) => (
