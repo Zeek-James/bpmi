@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { Eligibility, Hero, Nominee } from "../components";
+import { Eligibility, Hero, Layout, Nominee } from "../components";
 import { Awards, SecsOfFocus } from "../components/categories";
 
-export default function Categories() {
+const Categories = () => {
   return (
     <>
       <Head>
@@ -31,4 +31,8 @@ export default function Categories() {
       </main>
     </>
   );
-}
+};
+
+Categories.layout = Layout;
+
+export default Categories;

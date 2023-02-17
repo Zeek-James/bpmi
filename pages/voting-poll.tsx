@@ -1,12 +1,12 @@
 import Head from "next/head";
-import { Button, Herofn, VoteGuide } from "../components";
+import { Button, Herofn, Layout, VoteGuide } from "../components";
 import { Radio } from "../components/become-a-nominee";
 import styles from "../components/style";
 import { Questionnaire } from "../components/votePoll";
 import { industries } from "../constants";
 import { awardCategories, nominees } from "../constants/vote";
 
-export default function VotingPoll() {
+const VotingPoll = () => {
   return (
     <>
       <Head>
@@ -36,7 +36,7 @@ export default function VotingPoll() {
             Voting Poll
           </h2>
           <form className="w-full  flex flex-col ">
-            <div>
+            {/* <div>
               <h3
                 className={"text-darkText mb-3 md:mb-6 text-2xl font-semibold"}
               >
@@ -125,11 +125,15 @@ min-h-[200px]
                   ("");
                 }}
               />
-            </div>
-            {/* <Questionnaire /> */}
+            </div> */}
+            <Questionnaire />
           </form>
         </section>
       </main>
     </>
   );
-}
+};
+
+VotingPoll.layout = Layout;
+
+export default VotingPoll;

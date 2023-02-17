@@ -1,7 +1,7 @@
 import Head from "next/head";
-import { Hero, PastWinner } from "../components";
+import { Hero, Layout, PastWinner } from "../components";
 
-export default function Winners() {
+const Winners = () => {
   return (
     <>
       <Head>
@@ -10,7 +10,7 @@ export default function Winners() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={``}>
+      <main className={`text-darkText`}>
         <Hero img={"stairs"}>
           <div
             className="
@@ -24,8 +24,11 @@ export default function Winners() {
           </div>
         </Hero>
         <PastWinner />
-        journey our approach why enter our winner pre-award
       </main>
     </>
   );
-}
+};
+
+Winners.layout = Layout;
+
+export default Winners;

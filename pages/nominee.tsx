@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Button, Eligibility, Herofn } from "../components";
+import { Button, Eligibility, Herofn, Layout } from "../components";
 import {
   AwardCategories,
   CompanyDetails,
@@ -7,7 +7,7 @@ import {
 } from "../components/become-a-nominee";
 import styles from "../components/style";
 
-export default function BecomeANominee() {
+const BecomeANominee = () => {
   return (
     <>
       <Head>
@@ -81,4 +81,8 @@ export default function BecomeANominee() {
       </main>
     </>
   );
-}
+};
+
+BecomeANominee.layout = Layout;
+
+export default BecomeANominee;

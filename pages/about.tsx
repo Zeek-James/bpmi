@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { About, AimsAndObj, Benefits } from "../components/about";
-import { Hero, Nominee } from "../components";
+import { Hero, Layout, Nominee } from "../components";
 
-export default function AboutUs() {
+const AboutUs = () => {
   return (
     <>
       <Head>
@@ -31,4 +31,8 @@ export default function AboutUs() {
       </main>
     </>
   );
-}
+};
+
+AboutUs.layout = Layout;
+
+export default AboutUs;
