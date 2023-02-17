@@ -12,7 +12,8 @@ import {
   WinnersJourney,
 } from "../components/home";
 
-export default function Home() {  return (
+const Home = () => {
+  return (
     <>
       <Head>
         <title>BPMI</title>
@@ -63,3 +64,6 @@ export default function Home() {  return (
   );
 };
 
+Home.layout = Layout;
+
+export default Home;
