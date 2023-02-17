@@ -1,12 +1,21 @@
 import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import { Layout } from "../components";
 
-export default function App({ Component, pageProps }: AppProps) {
+import { ReactElement } from "react";
+import type { AppProps } from "next/app";
+import PageWithLayoutType from "../types/pages";
+
+type AppLayoutProps = AppProps & {
+  Component: PageWithLayoutType;
+  pageProps: any;
+};
+
+function App({ Component, pageProps }: AppLayoutProps) {
+  const Layout =
+    Component.layout || ((children: ReactElement) => <>{children}</>);
   return (
     <Layout>
       <Component {...pageProps} />
     </Layout>
   );
 }
-
+export default App;
