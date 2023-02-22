@@ -24,7 +24,7 @@ const data = {
   ],
 };
 
-export default ({ title }: BarChartProps) => {
+const BarChart = ({ title }: BarChartProps) => {
   // displayName: "BarExample",
 
   return (
@@ -40,3 +40,5 @@ export default ({ title }: BarChartProps) => {
     </>
   );
 };
+
+export default BarChart;
