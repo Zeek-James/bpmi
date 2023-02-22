@@ -5,7 +5,6 @@ interface RadioProp {
   id: string;
   name: string;
   context: string;
-  // checked: any;
 }
 
 const Radio = ({ context, id, name }: RadioProp) => (
@@ -15,7 +14,6 @@ const Radio = ({ context, id, name }: RadioProp) => (
       type="radio"
       name={name}
       id={id}
-      // checked={checked === !undefined}
     />
     <label
       className={`form-check-label text-start             

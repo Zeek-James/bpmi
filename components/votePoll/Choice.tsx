@@ -40,13 +40,7 @@ const Choice = ({ next }: CProps) => {
           onChange={(e) => handleCategory(e)}
         >
           {awardCategories.map(({ text }, i) => (
-            <Radio
-              name={"category"}
-              id={text}
-              context={text}
-              key={i}
-              checked={reset}
-            />
+            <Radio name={"category"} id={text} context={text} key={i} />
           ))}
         </div>
       </div>
@@ -59,13 +53,7 @@ const Choice = ({ next }: CProps) => {
           onChange={(e) => handleSector(e)}
         >
           {industries.map(({ text, name }, i) => (
-            <Radio
-              name={"sector"}
-              id={text}
-              context={text}
-              key={i}
-              checked={reset}
-            />
+            <Radio name={"sector"} id={text} context={text} key={i} />
           ))}
         </div>
       </div>
@@ -80,13 +68,7 @@ const Choice = ({ next }: CProps) => {
               onChange={(e) => handleNominee(e)}
             >
               {nominees.map(({ text }, i) => (
-                <Radio
-                  name={"nominee"}
-                  id={text}
-                  context={text}
-                  key={i}
-                  checked={reset}
-                />
+                <Radio name={"nominee"} id={text} context={text} key={i} />
               ))}
             </div>
           </div>
