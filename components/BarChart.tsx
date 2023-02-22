@@ -24,10 +24,11 @@ const data = {
   ],
 };
 
-export default ({ title }: BarChartProps) => ({
-  displayName: "BarExample",
-  render() {
-    return (
+export default ({ title }: BarChartProps) => {
+  // displayName: "BarExample",
+
+  return (
+    <>
       <div className="w-full   p-2 md:p-6 flex items-center justify-center">
         <div className="w-fit shadow-xl  min-w-fit xl:w-9/12 rounded-xl  p-2 md:p-6 ">
           <div className="">
@@ -36,6 +37,6 @@ export default ({ title }: BarChartProps) => ({
           </div>
         </div>
       </div>
-    );
-  },
-});
+    </>
+  );
+};
