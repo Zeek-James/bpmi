@@ -22,7 +22,9 @@ const AimsAndObj = () => {
         <h2 className={`${styles.heading2} text-primary leading-[50px] `}>
           Our Aims and <br /> Objectives
         </h2>
-        <p className={` sm:py-5 py-2 ${styles.paragraph}`}>
+        <p
+          className={` sm:py-5 py-2 font-poppins font-semibold text-dimWhite text-[18px]`}
+        >
           The Aims and Objectives of the BMP Excellence Award <br /> are:
         </p>
         {objectives.map((item, i) => (

@@ -1,6 +1,6 @@
 import React from "react";
 import { approach } from "../../constants/landingPage";
-import Button from "../Button";
+import { Button, PLink } from "../";
 import styles from "../style";
 
 const OurApproach = () => {
@@ -26,7 +26,11 @@ const OurApproach = () => {
           </div>
         ))}
       </div>
-      <Button text="Find out more" styles={"bg-primary px-3 text-white"} />
+      <PLink
+        href="/judging"
+        text="Find out more"
+        styles={"bg-primary px-3 text-white"}
+      />
     </section>
   );
 };

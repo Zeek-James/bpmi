@@ -1,5 +1,6 @@
 import Head from "next/head";
-import { Button, Eligibility, Herofn, Layout } from "../components";
+import { useState } from "react";
+import { Button, Eligibility, Herofn, Layout, Modal } from "../components";
 import {
   AwardCategories,
   CompanyDetails,
@@ -8,6 +9,8 @@ import {
 import styles from "../components/style";
 
 const BecomeANominee = () => {
+  const [showModal, setModal] = useState(false);
+
   return (
     <>
       <Head>
@@ -71,13 +74,16 @@ const BecomeANominee = () => {
                     styles="bg-primary text-white font-semibold 
                   text-xl px-20"
                     text="Submit"
-                    onClick={() => {
-                      ("");
-                    }}
+                    onClick={() => setModal(true)}
                   />
                 </div>
               </div>
             </form>
+            <Modal
+              isvisible={showModal}
+              onClose={() => setModal(false)}
+              context={"Your Nominee registration has been completed"}
+            />
           </section>
         </main>
       </Layout>

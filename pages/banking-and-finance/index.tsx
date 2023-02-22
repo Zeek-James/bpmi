@@ -1,6 +1,6 @@
 import Head from "next/head";
-import { AltLayout } from "../components";
-import { BestUserExperince } from "../components/banking-and-fin";
+import { AltLayout } from "../../components";
+import { BestUserExperince } from "../../components/banking-and-fin";
 
 const BankAndFin = () => {
   return (

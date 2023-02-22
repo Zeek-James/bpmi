@@ -2,6 +2,8 @@ import React from "react";
 import styles, { layout } from "../style";
 import Button from "../Button";
 import Image from "next/image";
+import Link from "next/link";
+import PLink from "../PLink";
 
 const About = () => {
   return (
@@ -16,10 +18,10 @@ const About = () => {
           processes from chosen sectors towards encouraging effective when it
           comes to service delivery and customers expectation management.{" "}
         </p>
-
-        <Button
-          text={"Find out more"}
-          styles={`mt-5 px-7 bg-primary text-white`}
+        <PLink
+          href="/about"
+          text="Find out more"
+          styles={"bg-primary px-3 text-white"}
         />
       </div>
       <div className={layout.sectionImg}>
@@ -30,7 +32,7 @@ const About = () => {
           width={400}
           height={490}
         />
-      </div>{" "}
+      </div>
     </section>
   );
 };
