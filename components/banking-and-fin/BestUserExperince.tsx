@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { banks } from "../../constants";
 import Button from "../Button";
@@ -19,16 +20,26 @@ const BestUserExperince = () => {
                 <p className="text-[24px] ">{bank.rating} Ratings</p>
               </td>
               <td className={`${border}  md:pr-0 pr-0`}>
-                <Button
-                  text={"View Votes"}
-                  styles={"text-[20px] bg-primary text-white"}
-                />
+                <Link
+                  href="/banking-and-finance/voting-response"
+                  passHref={true}
+                >
+                  <Button
+                    text={"View Votes"}
+                    styles={"text-[20px] bg-primary text-white"}
+                  />
+                </Link>
               </td>
               <td className={`${border} justify-end flex md:pr-0 pr-0`}>
-                <Button
-                  text={"View Ratings"}
-                  styles={"text-[20px] border border-primary text-primary"}
-                />
+                <Link
+                  href="/banking-and-finance/ratings-response"
+                  passHref={true}
+                >
+                  <Button
+                    text={"View Ratings"}
+                    styles={"text-[20px] border border-primary text-primary"}
+                  />
+                </Link>
               </td>
             </tr>
           ))}

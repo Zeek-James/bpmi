@@ -1,3 +1,4 @@
 import Questionnaire from "./Questionnaire";
+import { Questionnairefn } from "./Questionnaire";
 
-export { Questionnaire };
+export { Questionnaire, Questionnairefn };

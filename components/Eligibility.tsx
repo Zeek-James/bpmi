@@ -1,6 +1,5 @@
 import React from "react";
 import styles, { layout } from "./style";
-import { benefits } from "../constants/about";
 import { eligibility } from "../constants/categories";
 import { ShieldIcon } from "../assets";
 import Image from "next/image";
@@ -14,7 +13,9 @@ const Eligibility = () => {
         <h2 className={`${styles.heading2} text-primary leading-[50px] `}>
           Eligibility
         </h2>
-        <p className={` sm:py-5 py-2 ${styles.paragraph}`}>
+        <p
+          className={` sm:py-5 py-2 font-poppins font-semibold text-dimWhite text-[18px]`}
+        >
           {organization.brief}
         </p>
         {organization.eligibilities.map((item, i) => (
@@ -32,7 +33,9 @@ const Eligibility = () => {
             </p>
           </div>
         ))}
-        <p className={` sm:py-5 py-2 ${styles.paragraph}`}>
+        <p
+          className={` sm:py-5 py-2 font-poppins font-semibold text-dimWhite text-[18px]`}
+        >
           {individual.brief}
         </p>
         <div className="flex items-center p-2 text-[#3E4095] mb-2 lg:mb-6 xl:text-2xl gap-3 md:gap-6">

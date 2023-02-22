@@ -1,5 +1,6 @@
 import Criteria from "./Criteria";
 import RatingMeth from "./RatingMeth";
 import RatingFocus from "./RatingFocus";
+import Jurist from "./Jurist";
 
-export { Criteria, RatingFocus, RatingMeth };
+export { Criteria, Jurist, RatingFocus, RatingMeth };

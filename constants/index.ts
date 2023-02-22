@@ -121,3 +121,48 @@ export const banks = [
   { title: "Opay", vote: 15, rating: 15 },
   { title: "Stanbic IBTC Bank Plc", vote: 15, rating: 15 },
 ];
+
+export const responses = {
+  labels: ["Januaray", "Januaray", "Januaray", "Januaray"],
+  datasets: [
+    {
+      labe: "Lon",
+      borderRadius: 30,
+      data: [0.1, 0.4, 0.5],
+      backgroundColor: "blue",
+      barThickness: 10,
+    },
+  ],
+};
+
+export const barChart = {
+  plugins: {
+    legend: {
+      position: "top",
+      align: "center",
+      labels: {
+        boxWidth: 7,
+        usePointStyles: true,
+      },
+      title: {
+        text: "S",
+        display: true,
+        color: "#000",
+      },
+    },
+  },
+  scales: {
+    xAxis: {
+      display: false,
+    },
+    yAxis: {
+      max: 1,
+    },
+  },
+  elements: {
+    bar: {
+      barPercentage: 0.3,
+      categoryPercentage: 1,
+    },
+  },
+};
