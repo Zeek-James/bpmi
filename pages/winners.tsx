@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Hero, Layout, PastWinner } from "../components";
+import ComingSoon from "../components/winners/ComingSoon";
 
 const Winners = () => {
   return (
@@ -24,7 +25,8 @@ const Winners = () => {
               </h1>
             </div>
           </Hero>
-          <PastWinner />
+          <ComingSoon />
+          {/* <PastWinner /> */}
         </main>
       </Layout>
     </>

@@ -28,49 +28,19 @@ const MENU_OPTIONS: MenuOption[] = [
   {
     name: "Sectors",
     icon: SectorIcon,
-    url: "/sectors",
+    // url: "/sectors",
     subItems: [
       {
         name: "Banking and finance",
         url: "/banking-and-finance",
-        subItems: [
-          {
-            name: "Access Bank Plc",
-            url: "access-bank-plc",
-          },
-          {
-            name: "Ecobank Nigeria",
-            url: "ecobank-nigeria",
-          },
-        ],
       },
       {
         name: "Telecommunication",
         url: "/telecommunication",
-        subItems: [
-          {
-            name: "Access Bank Plc",
-            url: "access-bank-plc",
-          },
-          {
-            name: "Ecobank Nigeria",
-            url: "ecobank-nigeria",
-          },
-        ],
       },
       {
         name: "Transport",
         url: "/transport",
-        subItems: [
-          {
-            name: "Access Bank Plc",
-            url: "access-bank-plc",
-          },
-          {
-            name: "Ecobank Nigeria",
-            url: "ecobank-nigeria",
-          },
-        ],
       },
     ],
   },
@@ -90,7 +60,7 @@ const MENU_OPTIONS: MenuOption[] = [
 export type MenuItemType = {
   name: string;
   icon?: React.ComponentType;
-  url: string;
+  url?: string;
   id?: string;
   depth?: number;
   subItems?: MenuItemType[];
@@ -99,7 +69,7 @@ export type MenuItemType = {
 type MenuOption = {
   name: string;
   icon?: React.ComponentType;
-  url: string;
+  url?: string;
   subItems?: MenuOption[];
 };
 

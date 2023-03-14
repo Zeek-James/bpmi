@@ -11,7 +11,7 @@ const AltLayout = ({ children }: LayoutProp) => {
       <div className="flex bg-card ">
         <Sidebar />
         <div className="w-full bg-white p-4 md:p-8">
-          <div className="flex w-full">
+          <div className="flex flex-col lg:flex-row w-full">
             <h2 className="grow text-primary font-bold text-[32px]">
               Council of Jurist Dashboard
             </h2>

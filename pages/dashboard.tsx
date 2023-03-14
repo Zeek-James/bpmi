@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { AltLayout } from "../components";
 import { MessageCard } from "../components/dashboard";
+import MultiDataBarChart from "../components/MultiDataBarChart";
 import { topCards } from "../constants/dashboard";
 
 const Dashboard = () => {
@@ -14,19 +15,19 @@ const Dashboard = () => {
       </Head>
       <AltLayout>
         <main className={`text-darkText w-full py-6`}>
-          <div className="text-white  flex justify-between   ">
+          <div className="text-white  flex  flex-col lg:flex-row items-center md:justify-between ">
             {topCards.map((card) => (
               <div
-                className="  h-[200px] md:max-w-[400px]  p-6 flex flex-col rounded-3xl shadow-xl"
+                className="  max-h-[200px] md:w-[380px] w-fit p-6 flex flex-col rounded-3xl shadow-xl"
                 key={card.id}
               >
                 <h3
-                  className={` text-darkText  text-[20px] md:text-[28px] grow`}
+                  className={` text-darkText  text-[20px] xl:text-[28px] grow mb-10`}
                 >
                   {card.content}
                 </h3>
                 <h3
-                  className={` text-primary font-semibold  text-[28px] md:text-[35px] `}
+                  className={` text-primary font-semibold  text-[28px] xl:text-[35px] `}
                 >
                   {card.amount}
                   {"  "}
@@ -35,8 +36,17 @@ const Dashboard = () => {
               </div>
             ))}
           </div>
-          <div className="flex justify-between">
-            <MessageCard />
+          <div className="flex flex-col xl:flex-row justify-between gap-6 my-4 md:my-10">
+            <MultiDataBarChart
+              title="Voting Poll"
+              colours={["#3E4095", "#ececf4"]}
+            />
+            <MultiDataBarChart
+              title="Mystery shopping"
+              colours={["#252659", "#323377"]}
+            />
+          </div>
+          <div className="flex flex-col lg:flex-row gap-4 justify-between  overflow-x-auto ">
             <MessageCard />
             <MessageCard />
           </div>

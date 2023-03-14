@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { MENU_ITEMS } from "../constants/menuItems";
 import MenuList from "./MenuList";
+import { SlLogout } from "react-icons/sl";
 
 const Sidebar = () => {
   return (
@@ -21,7 +23,18 @@ const Sidebar = () => {
       <div className=" grow p-4 md:p-8 mb-24">
         <MenuList options={MENU_ITEMS} />
       </div>
-      <div className="">bottom</div>
+      <div className=" p-4 md:p-8 mb-24">
+        {" "}
+        <Link href={"/login"} passHref>
+          <div className="flex items-center  h-full">
+            <SlLogout className="text-[30px] text-[#3a3a3a] " />
+
+            <p className="pl-3 font-semibold text-[20px] leading-[32px] pr-4">
+              Log out
+            </p>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };

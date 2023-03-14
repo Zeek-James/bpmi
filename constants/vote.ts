@@ -1,7 +1,8 @@
-export const VoteGuideLines = [
+export const voteGuideLines = [
   "Choose the award category under which the nominee you want to vote is.",
   "Choose the industry under which the nominee you want to vote for is. ",
   "Pick your nominee and write why you vote for them.",
+  "Rate the nominee",
 ];
 
 export const awardCategories = [
