@@ -14,7 +14,7 @@ const Nominee = () => {
 
         `}
       >
-        Wanna Become a Nominee
+        Want to Become a Nominee
       </h1>
 
       <Link href="nominee" passHref={true}>

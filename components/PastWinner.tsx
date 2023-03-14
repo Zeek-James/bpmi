@@ -9,13 +9,13 @@ const PastWinner = () => {
       className={`${styles.flexCenter} ${styles.paddingX} flex-col my-20`}
     >
       <h2 className={`${styles.heading2} text-primary text-center mb-6`}>
-        Past Winners
+        Winners
       </h2>
       <div className="flex w-full mb-16">
         <div className="flex  w-full">
-          <SelectField />
-          <SelectField />
-          <SelectField />
+          <SelectField title="Year" holder={"2022"} />
+          <SelectField title="Category" holder={"All"} />
+          <SelectField title="Industry" holder={"All"} />
         </div>
         <SearchField />
       </div>

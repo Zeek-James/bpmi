@@ -36,7 +36,7 @@ const RatingMeth = () => {
         <Image
           width={400}
           height={490}
-          src={`/work.jpg`}
+          src={`/rating.jpg`}
           alt="agree"
           className="w-[100%] max-h-[490px]"
         />

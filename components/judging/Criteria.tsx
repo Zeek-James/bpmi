@@ -4,6 +4,7 @@ import { benefits } from "../../constants/about";
 import { eligibility } from "../../constants/categories";
 import { selection } from "../../constants/judging";
 import { ShieldIcon } from "../../assets";
+import Image from "next/image";
 
 const Criteria = () => {
   // const { organization, individual } = eligibility;
@@ -32,6 +33,15 @@ const Criteria = () => {
             </p>
           </div>
         ))}
+      </div>
+      <div className={layout.sectionImg}>
+        <Image
+          width={400}
+          height={490}
+          src={`/council.jpg`}
+          alt="agree"
+          className="w-[100%] max-h-[490px]"
+        />
       </div>
     </section>
   );

@@ -9,9 +9,7 @@ const Benefits = () => {
     <section className={`${layout.section} ${styles.paddingX}  `}>
       <div className={layout.sectionInfo}>
         <h2 className={`${styles.heading2} text-primary leading-[50px] `}>
-          Our
-          <br />
-          Benefits
+          Our Benefits
         </h2>
         <p
           className={` sm:py-5 py-2 font-poppins font-semibold text-dimWhite text-[18px]`}
