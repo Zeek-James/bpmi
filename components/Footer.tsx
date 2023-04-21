@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section
       className={
-        "bg-[#E2E2EF] px-3 pt-6 sm:pt-16 pb-6 flex flex-col sm:flex-row sm:items-center"
+        "bg-[#E2E2EF] text-black px-3 pt-6 sm:pt-16 pb-6 flex flex-col sm:flex-row sm:items-center"
       }
     >
       <a href="home">
