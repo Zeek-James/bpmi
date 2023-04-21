@@ -40,7 +40,7 @@ const Login = () => {
                             Email
                           </label>
                           <input
-                            className="appearance-none block w-full  border border-primary rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            className="appearance-none block w-full  border border-primary rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none bg-white focus:border-gray-500"
                             id="grid-email"
                             type="text"
                             placeholder="xyz@example.com"
@@ -56,7 +56,7 @@ const Login = () => {
                             Password
                           </label>
                           <input
-                            className="appearance-none block w-full  border border-primary rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                            className=" appearance-none block w-full  border border-primary rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none bg-white focus:border-gray-500"
                             id="grid-password"
                             type="password"
                             placeholder="********"
