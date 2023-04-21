@@ -12,7 +12,7 @@ const About = () => {
         <h2 className={`${styles.heading2} text-primary `}>
           About BPM Excellence <br /> Awards
         </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5 `}>
+        <p className={`${styles.paragraph}  my-5  mx-2`}>
           The BPM Excellence Awards is the premiere business process awards
           which focuses on recognizing and celebrating innovative business
           processes from chosen sectors towards encouraging effective when it
