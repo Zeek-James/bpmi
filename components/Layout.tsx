@@ -7,7 +7,7 @@ interface LayoutProp {
 
 const Layout = ({ children }: LayoutProp) => {
   return (
-    <div>
+    <div className="bg-white">
       <Navbar />
       {children}
       <Footer />
